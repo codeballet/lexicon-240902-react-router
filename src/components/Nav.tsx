@@ -13,6 +13,9 @@ export function Nav(): ReactElement {
             <Link className="nav__link" to="/contact">
                 <button className="nav__button">Contact</button>
             </Link>
+            <Link className="nav__link" to="/dashboard">
+                <button className="nav__button">Dashboard</button>
+            </Link>
         </nav>
     );
 }
