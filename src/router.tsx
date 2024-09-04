@@ -10,6 +10,7 @@ import {
     Dashboard,
     Home,
     Notfound,
+    Oldhome,
     Settings,
     Stats,
 } from "./pages";
@@ -24,6 +25,7 @@ export const router = createBrowserRouter(
                 <Route path="settings" element={<Settings />} />
                 <Route path="stats" element={<Stats />} />
             </Route>
+            <Route path="old-home" element={<Oldhome />} />
             <Route path="*" element={<Notfound />} />
         </Route>
     )
