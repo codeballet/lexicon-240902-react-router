@@ -20,6 +20,7 @@ export function Step1(): ReactElement {
             <h3 className="step__h3">Enter username</h3>
             <form onSubmit={handleSubmit}>
                 <input
+                    autoFocus
                     id="username"
                     name="username"
                     placeholder="Username"

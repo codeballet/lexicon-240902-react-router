@@ -21,6 +21,7 @@ export function Step2(): ReactElement {
             <h3 className="step__h3">Enter payment details</h3>
             <form onSubmit={handleSubmit}>
                 <input
+                    autoFocus
                     id="payment"
                     name="payment"
                     placeholder="Payment details"
