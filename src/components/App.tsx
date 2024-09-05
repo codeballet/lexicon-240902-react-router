@@ -8,7 +8,7 @@ export function App(): ReactElement {
 
     return (
         <LoggedInContext.Provider value={loggedIn}>
-            <Nav />
+            <Nav loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
             <Outlet />
         </LoggedInContext.Provider>
     );

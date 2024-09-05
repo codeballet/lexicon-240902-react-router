@@ -1,7 +1,12 @@
 import { ReactElement } from "react";
 import { Link } from "react-router-dom";
 
-export function Nav(): ReactElement {
+interface INavProps {
+    loggedIn: Boolean;
+    setLoggedIn: (loggedIn: Boolean) => void;
+}
+
+export function Nav({ loggedIn, setLoggedIn }: INavProps): ReactElement {
     return (
         <nav className="nav">
             <Link className="nav__link" to="/">
@@ -16,6 +21,12 @@ export function Nav(): ReactElement {
             <Link className="nav__link" to="/dashboard">
                 <button className="nav__button">Dashboard</button>
             </Link>
+            <button
+                className="nav__button"
+                onClick={() => setLoggedIn(!loggedIn)}
+            >
+                {loggedIn ? "Logout" : "Login"}
+            </button>
         </nav>
     );
 }
