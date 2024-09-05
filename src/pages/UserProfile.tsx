@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import { useParams } from "react-router-dom";
+import { Outlet, useParams } from "react-router-dom";
 
 export function UserProfile(): ReactElement {
     const params = useParams();
@@ -8,6 +8,7 @@ export function UserProfile(): ReactElement {
             <h2 className="UserProfile">
                 This is the profile for user "{params.id}"
             </h2>
+            <Outlet />
         </>
     );
 }

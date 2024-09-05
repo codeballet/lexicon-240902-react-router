@@ -14,6 +14,9 @@ import {
     Settings,
     Signup,
     Stats,
+    Step1,
+    Step2,
+    Step3,
     UserProfile,
 } from "./pages";
 
@@ -28,7 +31,11 @@ export const router = createBrowserRouter(
                 <Route path="stats" element={<Stats />} />
             </Route>
             <Route path="old-home" element={<Oldhome />} />
-            <Route path="signup" element={<Signup />}></Route>
+            <Route path="signup" element={<Signup />}>
+                <Route path="step1" element={<Step1 />} />
+                <Route path="step2" element={<Step2 />} />
+                <Route path="step3" element={<Step3 />} />
+            </Route>
             <Route path="user/:id" element={<UserProfile />} />
             <Route path="*" element={<Notfound />} />
         </Route>
