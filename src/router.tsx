@@ -13,6 +13,7 @@ import {
     Oldhome,
     Settings,
     Stats,
+    UserProfile,
 } from "./pages";
 
 export const router = createBrowserRouter(
@@ -26,6 +27,7 @@ export const router = createBrowserRouter(
                 <Route path="stats" element={<Stats />} />
             </Route>
             <Route path="old-home" element={<Oldhome />} />
+            <Route path="user/:id" element={<UserProfile />} />
             <Route path="*" element={<Notfound />} />
         </Route>
     )
