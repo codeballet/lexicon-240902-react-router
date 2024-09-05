@@ -5,5 +5,6 @@ export * from "./Home";
 export * from "./Notfound";
 export * from "./Oldhome";
 export * from "./Settings";
+export * from "./Signup";
 export * from "./Stats";
 export * from "./UserProfile";

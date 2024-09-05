@@ -1,6 +1,7 @@
+import { ReactElement } from "react";
 import { useParams } from "react-router-dom";
 
-export function UserProfile() {
+export function UserProfile(): ReactElement {
     const params = useParams();
     return (
         <>

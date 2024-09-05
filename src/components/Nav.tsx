@@ -21,6 +21,9 @@ export function Nav({ loggedIn, setLoggedIn }: INavProps): ReactElement {
             <NavLink className="nav__link" to="/dashboard">
                 <button className="nav__button">Dashboard</button>
             </NavLink>
+            <NavLink className="nav__link" to="/signup">
+                <button className="nav__button">Sign up</button>
+            </NavLink>
             <button
                 className="nav__button"
                 onClick={() => setLoggedIn(!loggedIn)}

@@ -12,6 +12,7 @@ import {
     Notfound,
     Oldhome,
     Settings,
+    Signup,
     Stats,
     UserProfile,
 } from "./pages";
@@ -27,6 +28,7 @@ export const router = createBrowserRouter(
                 <Route path="stats" element={<Stats />} />
             </Route>
             <Route path="old-home" element={<Oldhome />} />
+            <Route path="signup" element={<Signup />}></Route>
             <Route path="user/:id" element={<UserProfile />} />
             <Route path="*" element={<Notfound />} />
         </Route>
