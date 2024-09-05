@@ -1,8 +1,8 @@
 import { Navigate } from "react-router-dom";
-import { useContext } from "react";
+import { ReactElement, useContext } from "react";
 import { LoggedInContext } from "../context";
 
-export function Protected() {
+export function Protected(): ReactElement | undefined {
     const loggedIn = useContext(LoggedInContext);
 
     if (!loggedIn) {
