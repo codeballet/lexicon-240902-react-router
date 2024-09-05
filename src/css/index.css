@@ -10,3 +10,8 @@ body {
 .nav__link {
     margin-right: 1rem;
 }
+
+.nav a.active button {
+    color: white;
+    background-color: black;
+}
