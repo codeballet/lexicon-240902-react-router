@@ -1,4 +1,4 @@
-import { ReactElement } from "react";
+import { ReactElement, useContext } from "react";
 import { Link, Outlet } from "react-router-dom";
 
 export function Dashboard(): ReactElement {

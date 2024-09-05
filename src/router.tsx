@@ -3,7 +3,7 @@ import {
     createRoutesFromElements,
     Route,
 } from "react-router-dom";
-import { App } from "./components";
+import { App, Protected } from "./components";
 import {
     About,
     Contact,
