@@ -4,7 +4,9 @@ import { Link, Outlet } from "react-router-dom";
 export function Dashboard(): ReactElement {
     return (
         <>
-            <h2 className="dashboard">This is the Dashboard</h2>
+            <h2 className="dashboard">
+                Dashboard: login to see your settings and stats
+            </h2>
             <p>
                 Show me the <Link to="/dashboard/settings">Settings</Link>
             </p>
